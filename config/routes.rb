@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get '/songs' => '/songs#index'
+  get '/songs', controller: "songs", action: "index"
+  get '/songs/:id', controller: "songs", action: "show"
 end
